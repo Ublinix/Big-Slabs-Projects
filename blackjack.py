@@ -1,21 +1,9 @@
-
-
-#!/Users/Utsav/downloads/udemy python
-
-# For using the same code in either Python 2 or 3
-
-""" milestone_project_1.py: BlackJack Game """
-
-
-## Milestone Project 2
-
-# Importing libraries -- used for shuffling cards
 from curses import raw 
 import random
-from typing_extensions import Self
+from typing_extensions import Raw_Input
 
 # Boolean type to know whether play is in hand
-playing = False
+playing = True
 
 # Amount for buy-in
 chip_pool = 100
@@ -77,6 +65,15 @@ class Hand:
 			hand_comp += " " + card_name
 
 		return 'The hand has %s' %hand_comp
+	
+	def str2(self,card):
+		'''Return a String with Changes in Hand'''
+		hand_comp = " "
+		
+		for card in self.cards:
+			card_name = card.str1()
+			hand_comp += " " + card_name
+		return empty;
 
 	def card_add(self,card):
 		'''Add another card to the hand'''
@@ -133,7 +130,7 @@ class Deck:
 
 # End of Classes
 
-# First Bet
+# Making a Bet
 
 def make_bet():
 	'''Ask the player for the bet amount and '''
@@ -219,11 +216,11 @@ def hit():
 def stand():
 	global playing, chip_pool, deck, player_hand, dealer_hand, result, bet
 
-	'''This function plays the dealers hand, since stand was chosen'''
+	'''This function plays the dealers hand, since stand was chosen by the User'''
 
 	if playing == False:
 		if player_hand.calc_val() > 0:
-			result = "Sorry, you can't stand!"
+			result = "Sorry, you can't stand here!"
 
 	# Going through all other possible options
 	else:
@@ -293,7 +290,7 @@ def game_step():
 # Function to exit the game
 
 def game_exit():
-	print('Thanks for playing!')
+	print('Thank you for playing!')
 	exit()
 
 # Function to read user input
@@ -301,18 +298,18 @@ def game_exit():
 def player_input():
 	'''Read user input, lower case it jsuts to be safe'''
 
-	plin = raw_input().lower()
+	inp = raw_input().lower()
 
-	if plin == 'h':
+	if inp == 'h':
 		hit()
-	elif plin == 's':
+	elif inp == 's':
 		stand()
-	elif plin == 'd':
+	elif inp == 'd':
 		deal_cards()
-	elif plin == 'q':
+	elif inp == 'q':
 		game_exit()
 	else:
-		print("Invalid Input. Enter h, s, d, or q: ") 
+		print("Invalid Input. Kindly Enter one of the following : h, s, d, or q: ") 
 		player_input()
 
 # Intro to game
