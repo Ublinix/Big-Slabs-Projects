@@ -3,7 +3,7 @@
 ![Big-Slabs-Projects](https://socialify.git.ci/Ublinix/Big-Slabs-Projects/image?font=Raleway&language=1&name=1&owner=1&pattern=Overlapping%20Hexagons&stargazers=1&theme=Dark)
 
 ---
-<h1>Project is Coded in Python : </h1>
-<img src="https://imgs.search.brave.com/vB3rIUOwUdSCy9FquSiK2jlHfO7i8b1KcIbEvkFdqWs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMTAvUHl0aG9u/X2xvZ29faWNvbi5w/bmc" width : 500 height : 500 >
+<h1>About Python : </h1>
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
 
 ---
